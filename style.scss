@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+//
+// Colors
+//
+
+$color-white: #fff;
+$color-black: #000;
+$color-blue: #1769ff;
+$color-yellow: #fdb72e;
+$color-red: #ea455f;
+$color-pink: #ea4c89;
+$color-pink-light: #ffecf0;
+$color-gray: #656c7c;
+$color-gray-light: #b1b8c9;
+
+$g-body-background-color: #fff;
+$g-text-color: #656c7c;
+$g-font-family: Inter, sans-serif;
+$g-font-size: 1rem;
+$g-line-height: 1.5;
+
+body {
+  background-color: $g-body-background-color;
+  color: $g-text-color;
+  font-family: $g-font-family;
+  font-size: $g-font-size;
+  line-height: $g-line-height;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: $color-black;
+  line-height: 32px;
+  padding-top: 97px;
+}
+
+h2 {
+  color: $color-black;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+p {
+  text-align: center;
+  color: $color-gray;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.price-table-wrapper {
+  margin-top: 30px;
+  text-align: center;
+
+  .best-value {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    margin-top: 35px;
+    margin-right: 24px;
+    background: $color-yellow;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-white;
+    padding: 10px 18px;
+  }
+
+  .pro-table {
+    box-shadow: 0 14px 30px rgba(204, 204, 204, 0.32);
+  }
+
+  .pricing-table {
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    background: white;
+    margin: 24px;
+    text-align: left;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+    &__icon {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 5px;
+      margin-left: 24px;
+      margin-top: 32px;
+      margin-right: 13px;
+    }
+    &__description {
+      width: 312px;
+      margin: 31px 29px 0 24px;
+      text-align: left;
+      @media screen and (max-width: 768px) {
+        width: 270px;
+      }
+    }
+
+    &__price {
+      color: $color-black;
+      font-size: 32px;
+      font-weight: 600;
+      margin-left: 24px;
+      span {
+        font-size: 16px;
+        font-weight: 400;
+        color: #656c7c;
+        position: relative;
+        bottom: 5px;
+      }
+    }
+    &__list {
+      color: $color-black;
+      font-weight: 500;
+      list-style: none;
+      position: relative;
+      right: 30px;
+      i {
+        margin-right: 15px;
+        color: $color-red;
+      }
+      li {
+        padding: 15px;
+      }
+    }
+    .extra-feature {
+      position: absolute;
+    }
+
+    .non-feature {
+      color: $color-gray-light;
+    }
+    &__button {
+      display: block;
+      background: $color-pink-light;
+      border-radius: 8px;
+      font-family: $g-font-family;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      padding: 15px;
+      margin: 80px 24px 32px 24px;
+      color: $color-pink;
+      position: relative;
+
+      &:hover {
+        background: $color-pink;
+        color: $color-white;
+      }
+    }
+    &__blue {
+      background-color: $color-blue;
+      h1,
+      h2,
+      h3,
+      p,
+      ul,
+      i,
+      li {
+        color: $color-white;
+      }
+      a {
+        &:hover {
+          background-color: transparent;
+          border: 1px solid $color-white;
+        }
+      }
+    }
+  }
+}
