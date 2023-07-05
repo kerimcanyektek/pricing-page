@@ -1,79 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0abbb81080.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <body>
     <h1>Simple, transparent pricing</h1>
-    <p> No contracts. No suprise fees.</p>
+    <p>No contracts. No suprise fees.</p>
 
     <div class="price-table-wrapper">
+      <!-- Free plan price table -->
+      <div class="pricing-table">
+        <h2>
+          <img class="pricing-table__icon" src="/images/1.svg" alt="#" />Free
+        </h2>
+        <p class="pricing-table__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        </p>
+        <h3 class="pricing-table__price">$0 <span>/ month</span></h3>
 
-        <!-- Free plan price table -->
-        <div class="pricing-table">
-            <h2><img class="pricing-table__icon" src="/images/1.svg" alt="#">Free</h2>
-            <p class="pricing-table__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-            <h3 class="pricing-table__price">$0 <span>/ month</span></h3>
+        <ul class="pricing-table__list">
+          <li><i class="fa-solid fa-check"></i>2 links</li>
+          <li><i class="fa-solid fa-check"></i>Own analytics platform</li>
+          <li class="non-feature">
+            <i class="fa-solid fa-xmark non-feature"></i>Chat support
+          </li>
+          <li class="non-feature">
+            <i class="fa-solid fa-xmark non-feature"></i>Mobile application
+          </li>
+          <li class="non-feature">
+            <i class="fa-solid fa-xmark non-feature"></i>Unlimited users
+          </li>
+        </ul>
 
-            <ul class="pricing-table__list">
-                <li><i class="fa-solid fa-check"></i>2 links</li>
-                <li><i class="fa-solid fa-check"></i>Own analytics platform</li>
-                <li class="non-feature"><i class="fa-solid fa-xmark non-feature"></i>Chat support</li>
-                <li class="non-feature"><i class="fa-solid fa-xmark non-feature"></i>Mobile application</li>
-                <li class="non-feature"><i class="fa-solid fa-xmark non-feature"></i>Unlimited users</li>
-            </ul>
+        <a href="#" class="pricing-table__button">Get started</a>
+      </div>
+      <!-- Free plan price table end -->
 
-            <a href="#" class="pricing-table__button">Get started</a>
-        </div>
-        <!-- Free plan price table end -->
+      <!-- Pro plan price table -->
+      <div class="pricing-table pro-table">
+        <h2>
+          <img class="pricing-table__icon" src="images/2.svg" alt="#" />Pro<span
+            class="best-value"
+            >Best Value</span
+          >
+        </h2>
+        <p class="pricing-table__description">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        </p>
+        <h3 class="pricing-table__price">$18 <span>/ month</span></h3>
 
-        <!-- Pro plan price table -->
-        <div class="pricing-table pro-table">
-            <h2><img class="pricing-table__icon" src="images/2.svg" alt="#">Pro<span
-                    class="best-value">Best
-                    Value</span>
-            </h2>
-            <p class="pricing-table__description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-            <h3 class="pricing-table__price">$18 <span>/ month</span></h3>
+        <ul class="pricing-table__list">
+          <li><i class="fa-solid fa-check"></i>2 links</li>
+          <li><i class="fa-solid fa-check"></i>Own analytics platform</li>
+          <li><i class="fa-solid fa-check"></i>Chat support</li>
+          <li class="non-feature">
+            <i class="fa-solid fa-xmark non-feature"></i>Mobile application
+          </li>
+          <li class="non-feature">
+            <i class="fa-solid fa-xmark non-feature"></i>Unlimited users
+          </li>
+        </ul>
 
-            <ul class="pricing-table__list">
-                <li><i class="fa-solid fa-check"></i>2 links</li>
-                <li><i class="fa-solid fa-check"></i>Own analytics platform</li>
-                <li><i class="fa-solid fa-check"></i>Chat support</li>
-                <li class="non-feature"><i class="fa-solid fa-xmark non-feature"></i>Mobile application</li>
-                <li class="non-feature"><i class="fa-solid fa-xmark non-feature"></i>Unlimited users</li>
-            </ul>
+        <a href="#" class="pricing-table__button">Get started</a>
+      </div>
+      <!-- Pro plan price table end -->
 
-            <a href="#" class="pricing-table__button">Get started</a>
-        </div>
-        <!-- Pro plan price table end -->
+      <!-- Enterprise plan price table -->
+      <div class="pricing-table pricing-table__blue">
+        <h2>
+          <img
+            class="pricing-table__icon"
+            src="images/3.svg"
+            alt="#"
+          />Enterprise
+        </h2>
+        <p class="pricing-table__description">
+          Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        </p>
+        <h3 class="pricing-table__price">Let's Talk</h3>
 
-        <!-- Enterprise plan price table -->
-        <div class="pricing-table pricing-table__blue">
-            <h2><img class="pricing-table__icon" src="images/3.svg" alt="#">Enterprise</h2>
-            <p class="pricing-table__description">Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
-            <h3 class="pricing-table__price">Let's Talk</h3>
-
-            <ul class="pricing-table__list">
-                <li><i class="fa-solid fa-check"></i>2 links</li>
-                <li><i class="fa-solid fa-check"></i>Own analytics platform</li>
-                <li><i class="fa-solid fa-check"></i>Chat support</li>
-                <li><i class="fa-solid fa-check"></i>Mobile application</li>
-                <li><i class="fa-solid fa-check"></i>Unlimited users</li>
-                <li class="extra-feature"><i class="fa-solid fa-check"></i>Customize Panel</li>
-            </ul>
-            <a href="#" class="pricing-table__button">Get started</a>
-        </div>
-        <!-- Enterprise plan price table end -->
+        <ul class="pricing-table__list">
+          <li><i class="fa-solid fa-check"></i>2 links</li>
+          <li><i class="fa-solid fa-check"></i>Own analytics platform</li>
+          <li><i class="fa-solid fa-check"></i>Chat support</li>
+          <li><i class="fa-solid fa-check"></i>Mobile application</li>
+          <li><i class="fa-solid fa-check"></i>Unlimited users</li>
+          <li class="extra-feature">
+            <i class="fa-solid fa-check"></i>Customize Panel
+          </li>
+        </ul>
+        <a href="#" class="pricing-table__button">Get started</a>
+      </div>
+      <!-- Enterprise plan price table end -->
     </div>
-
-    <script src="https://kit.fontawesome.com/0abbb81080.js" crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>

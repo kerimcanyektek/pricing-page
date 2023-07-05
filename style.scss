@@ -84,9 +84,11 @@ p {
     background: white;
     margin: 24px;
     text-align: left;
+
     @media screen and (max-width: 768px) {
       display: block;
     }
+
     &__icon {
       width: 30px;
       height: 30px;
@@ -96,10 +98,12 @@ p {
       margin-top: 32px;
       margin-right: 13px;
     }
+
     &__description {
       width: 312px;
       margin: 31px 29px 0 24px;
       text-align: left;
+
       @media screen and (max-width: 768px) {
         width: 270px;
       }
@@ -110,6 +114,7 @@ p {
       font-size: 32px;
       font-weight: 600;
       margin-left: 24px;
+
       span {
         font-size: 16px;
         font-weight: 400;
@@ -118,20 +123,24 @@ p {
         bottom: 5px;
       }
     }
+
     &__list {
       color: $color-black;
       font-weight: 500;
       list-style: none;
       position: relative;
       right: 30px;
+
       i {
         margin-right: 15px;
         color: $color-red;
       }
+
       li {
         padding: 15px;
       }
     }
+
     .extra-feature {
       position: absolute;
     }
@@ -139,6 +148,7 @@ p {
     .non-feature {
       color: $color-gray-light;
     }
+
     &__button {
       display: block;
       background: $color-pink-light;
@@ -157,8 +167,10 @@ p {
         color: $color-white;
       }
     }
+
     &__blue {
       background-color: $color-blue;
+
       h1,
       h2,
       h3,
@@ -168,6 +180,7 @@ p {
       li {
         color: $color-white;
       }
+
       a {
         &:hover {
           background-color: transparent;
